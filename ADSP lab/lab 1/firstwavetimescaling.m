@@ -1,0 +1,13 @@
+t = linspace(-100,100,1000);
+t0 = 40;
+x = 4*t.*t+3;
+subplot(2,1,1);
+plot(t,x);
+xlabel('t');
+ylabel('x');
+t1 = t+t0;
+y=4*t1.*t1+3;
+subplot(2,1,2);
+plot(t,y);
+xlabel('t');
+ylabel('y');

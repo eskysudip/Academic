@@ -1,0 +1,21 @@
+n =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+xn=[1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0];
+xk = DFTFun(xn);
+subplot(4,1,1);
+stem(n,xn);
+xlabel("n");
+ylabel("x(n)");
+
+subplot(4,1,2);
+stem(n,abs(xk));
+xlabel("n");
+ylabel("Mag X(K)");
+subplot(4,1,3);
+stem(n,angle(xk));
+xlabel("n");
+ylabel("Theta X(K)");
+xn1 = iDFTFun(xk);
+subplot(4,1,4);
+stem(n,xn1);
+xlabel("n");
+ylabel("x'(n)");
